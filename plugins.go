@@ -1,6 +1,6 @@
 package plugins
 
-import "code.cloudfoundry.org/cli/plugin"
+import "code.cloudfoundry.org/cli/v8/plugin"
 
 type Plugin interface {
 	Execute(CliConnection, []string)

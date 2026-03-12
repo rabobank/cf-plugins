@@ -7,8 +7,8 @@ import (
 	"strings"
 	"time"
 
-	"code.cloudfoundry.org/cli/plugin"
-	plugin_models "code.cloudfoundry.org/cli/plugin/models"
+	"code.cloudfoundry.org/cli/v8/plugin"
+	plugin_models "code.cloudfoundry.org/cli/v8/plugin/models"
 	"github.com/cloudfoundry/go-cfclient/v3/client"
 	"github.com/cloudfoundry/go-cfclient/v3/config"
 )

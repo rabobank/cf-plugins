@@ -4,6 +4,11 @@ called through rpc calls. It only uses the rpc calls to obtain context informati
 like current org and space, for example) and the cf token which can be used to
 directly interact with the cf landscape.
 
+___SINCE v1.00, cf-plugins uses the now compatible with golang version workflow, cli version.___
+___Importing cf-plugins will now force the plugin to also update its dependency to the v8 cli version (code.cloudfoundry.org/cli => code.cloudfoundry.org/cli/v8)___
+
+___v1+ is effectively a breaking change from the v0.* development versions___
+
 ## Usage
 
 The library mimicks the normal cli plugins framework and emulates the plugin
@@ -18,7 +23,7 @@ import (
     "fmt"
     "os"
 
-    "code.cloudfoundry.org/cli/plugin"
+    "code.cloudfoundry.org/cli/v8/plugin"
 )
 
 type CfPlugin struct{}
@@ -66,7 +71,7 @@ import (
     "fmt"
     "os"
 
-    "code.cloudfoundry.org/cli/plugin"
+    "code.cloudfoundry.org/cli/v8/plugin"
     "github.com/rabobank/cf-plugins" // Add this import
 )
                  .
@@ -105,7 +110,7 @@ import (
     "fmt"
     "os"
 
-    "code.cloudfoundry.org/cli/plugin"
+    "code.cloudfoundry.org/cli/v8/plugin"
     "github.com/rabobank/cf-plugins" // Add this import
 )
 
